@@ -1,0 +1,406 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color:wheat;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url("/Diplomski/res/header.jpg");
+    background-size: cover;
+}
+
+.header h1 {
+    font-family: Arial;
+    font-size: 25px;
+    color: white;
+    margin-left: 10px;
+}
+
+.log{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.log a{
+    margin-right: 20px;
+    margin-top: 20px;
+    color:white;
+}
+
+.body {
+    display: flex;
+    flex-direction: row;
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.side button {
+    height: 60px;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    background-color: darkslateblue;
+}
+
+.drop{
+    display: none;
+    flex-direction: column;
+}
+
+.drop form{
+    height: 100%;
+    margin-bottom: 0;
+}
+
+.submit {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    background-color: mediumslateblue;
+    color: white;
+    font-size: 20px;
+}
+
+.tab{
+    width:100%;
+    margin-right: 20px;
+}
+
+table {
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 2px;
+    border-style: solid;
+    width: 100%;
+}
+
+th, td {
+    border: 2px;
+    border-style: solid;
+    line-height: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: dodgerblue;
+}
+
+tr:nth-child(odd) {
+    background-color: deepskyblue;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    width:50%;
+    align-self:center;
+    margin-top:20px;
+}
+
+.title img, h1{
+    align-self:center;
+}
+
+.title img{
+    margin-right:20px;
+}
+
+#mydate{
+    margin-left:5px;
+    margin-right:10px;
+}
+
+#res {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: thin;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.fres {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: thin;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom:30px;
+}
+
+.fix {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top:10px;
+    padding-bottom:10px;
+    align-items:center;
+}
+
+.fix:nth-child(even){
+    background-color:lightseagreen;
+}
+
+.fix:nth-child(odd){
+    background-color:lightgreen;
+}
+
+.link{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width:50%;
+}
+
+.left {
+    width: 45%;
+    display:flex;
+    align-items: center;
+    font-size:17px;
+}
+
+.left img{
+    margin-right:10px;
+}
+
+.right {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    font-size: 17px;
+}
+
+.right img{
+    margin-left:10px;
+}
+
+.mid {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    align-self: flex-end;
+    font-size: 17px;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: darkred;
+    border-radius: 20px;
+}
+
+.stime{
+    margin-left: 30px;
+    width:5%;
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding-top:7px;
+    padding-bottom:7px;
+}
+
+.sliga{
+    margin-right: 20px;
+    width:15%;
+}
+
+.sliga a{
+    font-size: 15px;
+}
+
+.dat{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.mlige{
+    width: 100%;
+    margin-right: 20px;
+    display:flex;
+    flex-direction:column;
+}
+
+.upf p{
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial;
+}
+
+.mklub{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.k1{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+
+.k1 span{
+    align-self:center;
+    font-size: 50px;
+}
+
+.k2{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.k2 span{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.uh{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    font-size:20px;
+    font-weight:bold;
+    margin-top:20px;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.uleft {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.uleft a{
+    margin-left:20px;
+}
+
+.uright {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.uright a{
+    margin-right:20px;
+}
+
+.umid{
+    width:10%;
+    padding:15px;
+    text-align:center;
+    align-content:center;
+    background-color:red;
+    border-radius:30px;
+    color:white;
+    font-size:30px;
+}
+
+.dnt{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    margin-bottom:20px;
+}
+
+.dnt span{
+    background-color:black;
+    color:white;
+    padding: 5px;
+}
+
+.stats{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    margin-top:20px;
+    font-size:20px;
+    background-color:lightseagreen;
+    margin-left:30px;
+    margin-right:30px;
+    padding:5px;
+    border-radius:20px;
+}
+
+.sname{
+    width:30%;
+    text-align:center;
+}
+
+.stand{
+    margin-bottom:30px;
+}
+
+#afl button{
+    margin-top:20px;
+    margin-left:20px;
+    height:50px;
+    background-color:red;
+    color:white;
+    font-size:20px;
+}
+
+#afb button {
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+
+.admin {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.admin a {
+    background-color: black;
+    color: white;
+    padding:5px;
+    font-size:20px;
+}
